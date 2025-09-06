@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+header {
+    background-color: #1c2d86;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav {
+    background-color: #2f3e9e;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav a {
+    margin: 0 15px;
+    color: white;
+    font-weight: bold;
+}
+
+
+.hero {
+    background: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d') no-repeat center/cover;
+    text-align: center;
+    padding: 100px 20px 50px;
+    color: white;
+
+  width: 60%;        
+  max-width: 1000px;
+  margin: 0 auto;    
+  height: 320px;     
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  
+   
+}
+
+.hero h2 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: rgb(204, 255, 0);
+}
+
+.hero p {
+    font-size: 1.1em;
+}
+
+
+.welcome {
+    background: url('wwlcome_wall.jpg') no-repeat center/cover;
+    text-align: center;
+    color: white;
+    padding: 100px 20px;
+    image-rendering: pixelated; 
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+width: 60%;       
+  max-width: 1000px;
+  margin: 0 auto;    
+  height: 320px;     
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  text-align: center;
+
+}
+.welcome h2 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color:blue;
+}
+
+.welcome p {
+    font-size: 1.1em;
+}
+
+
+.about {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.about h2 {
+    color: #1c2d86;
+    margin-bottom: 20px;
+}
+
+.about p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+
+.section-title {
+    text-align: center;
+    color: #1c2d86;
+    font-size: 1.5em;
+    margin: 40px 0 20px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 250px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.card h4 {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.card p {
+    font-size: 0.95em;
+    padding: 0 10px;
+    color: #555;
+}
+
+
+.form-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.form-section h2 {
+    color: #1c2d86;
+    margin-bottom: 20px;
+}
+
+form {
+    background-color: white;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align:left;
+}
+form label{
+    font-weight:bold;
+    display:block;
+    margin-top:15px;
+    margin-bottom: 5px;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+form button {
+    background-color: #1c2d86;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.contact-section {
+    padding: 40px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.contact-section h2 {
+    color: #1c2d86;
+    margin-bottom: 10px;
+}
+
+.contact-section p {
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+
+
+footer {
+    background-color: #1c2d86;
+    color: white;
+    text-align: center;
+    padding: 30px 10px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #ffd;
+}
+    </style>
+    <title>Quantum Club | C. V. Raman Global University</title>
+    <link rel="stylesheet" href="ass.project.css">
+</head>
+<body>
+    <header>
+        <h1>Quantam Club</h1>
+        <p>C.V Raman Global University</p>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#events">Events</a>
+        <a href="#members">Members</a>
+        <a href="#register">Register</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section class="hero">
+        <h2>Innovating the Future with Quantum Computing</h2>
+        <p>Join the Quantum Club and be part of the next technological revolution</p>
+    </section>
+
+    
+    <section class="welcome">
+        <h2>Welcome to Quantum Club</h2>
+        <p>Exploring the world of Quantum Computing & Emerging Technologies</p>
+    </section>
+
+    
+    <section class="about">
+        <h2>About Us</h2>
+        <p>
+            The Quantum Club at C. V. Raman Global University is a student-led initiative dedicated to exploring the fascinating world of Quantum Computing, Quantum Mechanics, and related emerging technologies. Our mission is to create awareness, encourage research, and foster collaboration among students and faculty.
+        </p>
+    </section>
+
+    <section id="events">
+        <h2 class="section-title">Upcoming Events</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="VILINUS.jpeg" alt="Quantum Workshop">
+                <h4>Quantum Workshop</h4>
+                <p>Hands-on introduction to Quantum Programming with Qiskit.</p>
+            </div>
+            <div class="card">
+                <img src="seminar.jpeg" alt="Guest Seminar">
+                <h4>Guest Seminar</h4>
+                <p>Talk by industry experts on Quantum Applications in AI.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="members">
+        <h2 class="section-title">Our Members</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="member1.jpg" alt="Member 1">
+            </div>
+            <div class="card">
+                <img src="member2.jpg" alt="Member 2">
+            </div>
+            <div class="card">
+                <img src="member3.avif" alt="Member 3">
+            </div>
+        </div>
+    </section>
+
+    <section id="register" class="form-section">
+        <h2>Register for Membership</h2>
+        <form>
+            <label for="name">Full Name</label>
+            <input type="text" placeholder="Enter your name" required>
+            
+            <label for="email">Email Address</label>
+            <input type="email" placeholder="Enter your email" required>
+            <label for="department">Department</label>
+            <select required="department" required>
+                <option value="">-- Select Department --</option>
+                <option value="CSE">CSE</option>
+                <option value="AIML">AIML</option>
+                <option value="ECE">ECE</option>
+                <option value="MECH">MECH</option>
+            </select>
+            <label for="reason">Why do you want to join?</label>
+            <textarea id="reason" rows="4" placeholder="Why do you want to join?" required></textarea>
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <p>📧Email: <a href="mailto:quantumclub@cgu-odisha.ac.in">quantumclub@cgu-odisha.ac.in</a></p>
+        <p>📍Address: C. V. Raman Global University, Bhubaneswar, Odisha</p>
+    </section>
+
+    <footer>
+        <p>© 2025 Quantum Club, C. V. Raman Global University. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
