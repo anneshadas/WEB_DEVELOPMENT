@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript Programs</title>
+</head>
+
+<body>
+    <h1>JavaScript Application Programs</h1>
+
+    <button onclick="swapNumbers()">Swap 2 Numbers</button>
+    <div id="swap"></div>
+    <br>
+
+    <button onclick="multiplicationTable()">Multiplication Table</button>
+    <div id="table"></div>
+    <br>
+
+    <button onclick="primeNumbers()">Prime Numbers (1 to N)</button>
+    <div id="primes"></div>
+    <br>
+
+    <button onclick="sortArray()">Sort an Array</button>
+    <div id="sorted"></div>
+    <br>
+
+    <button onclick="matrixOps()">Matrix Operations</button>
+    <div id="matrix"></div>
+
+    <script>
+        // Swap 2 numbers
+        function swapNumbers() {
+            let a = 5, b = 10;
+            let output = "Before Swap: a = " + a + ", b = " + b + "<br>";
+            let temp = a;
+            a = b;
+            b = temp;
+            output += "After Swap: a = " + a + ", b = " + b;
+            document.getElementById("swap").innerHTML = output;
+        }
+
+        // Multiplication table using for loop
+        function multiplicationTable() {
+            let num = 7;
+            let output = "Multiplication Table of " + num + "<br>";
+            for (let i = 1; i <= 10; i++) {
+                output += num + " x " + i + " = " + (num * i) + "<br>";
+            }
+            document.getElementById("table").innerHTML = output;
+        }
+
+        // Prime numbers from 1 to N using do..while
+        function primeNumbers() {
+            let N = 30;
+            let i = 2;
+            let output = "Prime numbers from 1 to " + N + ":<br>";
+
+            do {
+                let isPrime = true;
+                for (let j = 2; j <= Math.sqrt(i); j++) {
+                    if (i % j === 0) {
+                        isPrime = false;
+                        break;
+                    }
+                }
+                if (isPrime) output += i + " ";
+                i++;
+            } while (i <= N);
+
+            document.getElementById("primes").innerHTML = output;
+        }
+
+        // Sort an array
+        function sortArray() {
+            let arr = [45, 12, 78, 34, 2, 89];
+            let output = "Original Array: " + arr + "<br>";
+            arr.sort((a, b) => a - b);
+            output += "Sorted Array: " + arr;
+            document.getElementById("sorted").innerHTML = output;
+        }
+
+        //Matrix sum, min, max
+        function matrixOps() {
+            let matrix = [
+                [3, 5, 7],
+                [2, 8, 1],
+                [9, 4, 6]
+            ];
+
+            let sum = 0;
+            let min = matrix[0][0];
+            let max = matrix[0][0];
+
+            for (let i = 0; i < matrix.length; i++) {
+                for (let j = 0; j < matrix[i].length; j++) {
+                    let val = matrix[i][j];
+                    sum += val;
+                    if (val < min) min = val;
+                    if (val > max) max = val;
+                }
+            }
+
+            let output = "Matrix: " + JSON.stringify(matrix) + "<br>";
+            output += "Sum of elements = " + sum + "<br>";
+            output += "Min element = " + min + "<br>";
+            output += "Max element = " + max;
+            document.getElementById("matrix").innerHTML = output;
+        }
+    </script>
+</body>
+</html>
