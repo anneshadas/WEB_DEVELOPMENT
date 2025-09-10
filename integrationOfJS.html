@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integrate js with our html page</title>
+    <script type="text/javascript">
+        function bodyload(){
+            // document.getElementById("paragraph").innerText="I love javascript";
+            // document.getElementById("paragraph").innerHTML="Welcome to js";
+            // document.getElementsByClassName("para1").innerText="hello";
+            // document.getElementById("pic").src="../NORRASTRAM.jpeg";
+            // document.getElementById("pic1").src="../OSLO.jpeg";
+            // document.getElementById("pic2").src="../NERIS.jpeg";
+            // document.getElementById("pic3").src="../HELISINKI.jpeg";
+            // document.getElementById("pic4").src="../KAYAK.jpeg";
+        //    document.querySelector("#pic").src="../COPEHEGAN.jpeg"
+        //    document.querySelector(".abbbc").src="../COPEHEGAN.jpeg"
+        document.querySelector("img").src="../COPEHEGAN.jpeg";
+        
+
+        }
+    </script>
+</head>
+<body onload="bodyload()">
+  <!-- <p id="paragraph" class="para1"></p> -->
+   <img   height="100px" width="130px" id="pic" border="1">
+   <!-- <img   height="100px" width="130px" id="pic1" border="1">
+   <img   height="100px" width="130px" id="pic2" border="1">
+   <img   height="100px" width="130px" id="pic3" border="1">
+   <img   height="100px" width="130px" id="pic4" border="1"> -->
+</body>
+</html>
