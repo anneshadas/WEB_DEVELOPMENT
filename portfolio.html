@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-br from-[#0b1220] via-[#121a2b] to-[#0b1220] text-[#e9eefc] font-sans">
+
+  <!-- HEADER -->
+  <header class="flex flex-col items-center justify-center text-center py-16 bg-[#121a2b]/70 backdrop-blur-lg shadow-lg">
+    <!-- Profile Image Wrapper with Glow -->
+    <div class="relative">
+      <div class="absolute -inset-1 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 opacity-50 blur-lg"></div>
+      <img src="ann.jpg" alt="My Photo" 
+           class="relative w-44 h-44 object-cover rounded-full border-4 border-blue-500 shadow-2xl 
+                  hover:scale-105 hover:shadow-blue-500/50 transition-all duration-300 ease-in-out">
+    </div>
+
+    <!-- Name & Typed Text -->
+    <h1 class="text-4xl font-bold tracking-wide mt-6">
+      👋 Hi, I'm <span class="text-blue-400">Annesha Das</span>
+    </h1>
+    <p class="text-lg mt-3">
+      <span id="typed-text" class="text-blue-400 font-semibold"></span>
+    </p>
+  </header>
+
+  <!-- PROJECTS -->
+<section class="max-w-5xl mx-auto my-16 px-6">
+  <h2 class="text-3xl font-semibold mb-10 text-center">🚀 Projects</h2>
+  <div class="grid md:grid-cols-2 gap-8">
+    
+    <!-- Project 1 -->
+    <a href="https://github.com/anneshadas/EchoBot-Voice-Controlled-Automation-System" 
+       target="_blank"
+       class="block bg-[#1b2438]/80 backdrop-blur-lg p-6 rounded-2xl shadow-lg border border-blue-500/20 
+              hover:bg-gradient-to-r hover:from-blue-600/40 hover:to-purple-600/40 
+              hover:scale-105 hover:shadow-blue-500/40 transition-all duration-500 cursor-pointer group">
+      <h3 class="text-xl font-bold group-hover:text-blue-400 transition-colors duration-300">
+        EchoBot - Voice Controlled Automation
+      </h3>
+      <p class="text-gray-300 mt-3">A Python-based voice assistant with speech recognition and text-to-speech.</p>
+    </a>
+
+    <!-- Project 2 -->
+    <a href="https://github.com/anneshadas/Examination-Management-System" 
+       target="_blank"
+       class="block bg-[#1b2438]/80 backdrop-blur-lg p-6 rounded-2xl shadow-lg border border-blue-500/20 
+              hover:bg-gradient-to-r hover:from-blue-600/40 hover:to-purple-600/40 
+              hover:scale-105 hover:shadow-blue-500/40 transition-all duration-500 cursor-pointer group">
+      <h3 class="text-xl font-bold group-hover:text-blue-400 transition-colors duration-300">
+        Examination Management System
+      </h3>
+      <p class="text-gray-300 mt-3">Python project to facilitate student profile management, exam scheduling, room allotment, and result management.</p>
+    </a>
+
+  </div>
+</section>
+
+
+  <!-- SKILLS -->
+  <section class="max-w-4xl mx-auto my-16 px-6 text-center">
+    <h2 class="text-3xl font-semibold mb-6">🛠️ Skills</h2>
+    <p class="text-gray-300 text-lg tracking-wide" data-aos="zoom-in">
+      <span class="px-3 py-1 bg-blue-500/20 rounded-lg mx-1">C++</span>
+      <span class="px-3 py-1 bg-blue-500/20 rounded-lg mx-1">Python</span>
+      <span class="px-3 py-1 bg-blue-500/20 rounded-lg mx-1">Machine Learning</span>
+      <span class="px-3 py-1 bg-blue-500/20 rounded-lg mx-1">MySQL</span>
+      <span class="px-3 py-1 bg-blue-500/20 rounded-lg mx-1">Git</span>
+      <span class="px-3 py-1 bg-blue-500/20 rounded-lg mx-1">HTML/CSS</span>
+    </p>
+  </section>
+
+  <!-- RESUME -->
+  <section class="max-w-3xl mx-auto my-16 px-6 text-center">
+    <h2 class="text-3xl font-semibold mb-6">📄 Resume</h2>
+    <p class="text-gray-300 mb-6">You can view or download my resume below:</p>
+    <a href="resume.pdf" target="_blank" 
+       class="inline-block bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-semibold px-8 py-3 rounded-xl shadow-lg hover:shadow-purple-500/50 transition-all duration-500 transform hover:scale-110">
+       View Resume
+    </a>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="max-w-3xl mx-auto my-16 px-6 text-center">
+    <h2 class="text-3xl font-semibold mb-6">📫 Contact</h2>
+    <p class="text-lg" data-aos="fade-up">
+      <a href="mailto:anneshadas.0201@gmail.com" class="text-blue-400 hover:underline hover:text-blue-300">Email</a> |
+      <a href="https://linkedin.com/in/anneshadas02/" target="_blank" class="text-blue-400 hover:underline hover:text-blue-300">LinkedIn</a> |
+      <a href="https://github.com/anneshadas" target="_blank" class="text-blue-400 hover:underline hover:text-blue-300">GitHub</a>
+    </p>
+  </section>
+
+  <!-- footer -->
+  <footer class="text-center text-gray-500 text-xs py-6 border-t border-gray-700/50">
+  © 2025 Annesha Das | Portfolio Website
+</footer>
+
+  <!-- Scripts -->
+  <script>
+    var typed = new Typed("#typed-text", {
+      strings: ["Machine Learning Enthusiast","Python Developer","Tech Explorer"],
+      typeSpeed: 60,
+      backSpeed: 40,
+      backDelay: 1000,
+      loop: true
+    });
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+  </script>
+
+</body>
+</html>
